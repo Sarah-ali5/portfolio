@@ -1,0 +1,279 @@
+/* -----------------------------
+    STYLE GÉNÉRAL DU SITE
+----------------------------- */
+body {
+    font-family: 'Segoe UI', sans-serif; 
+    margin: 0;                           
+    padding: 0;                          
+    background: #fff8f5;                
+    color: #444;                         
+}
+
+/* -----------------------------
+    ENTÊTE (HEADER)
+----------------------------- */
+header {
+    background-color: #ffb6c1;          
+    color: white;                       
+    padding: 30px;                      
+    text-align: center;                 
+    border-bottom: 5px solid #ffd1dc;   
+}
+
+/* -----------------------------
+    LIENS DE NAVIGATION
+----------------------------- */
+nav {
+    position: fixed;
+    top: 50px; 
+    right: 0;
+    width: 160px;
+    background-color: #ffb6c1;
+    padding: 20px;
+    border-left: 5px solid #ffd1dc;
+    height: calc(100% - 100px);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    box-sizing: border-box;
+    z-index: 999;
+}
+
+
+nav a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    width: 100%;
+    padding: 8px 10px;
+    border-radius: 8px;
+    text-align: left;
+}
+
+/* Hover */
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    text-decoration: underline;
+}
+
+/* -----------------------------
+    SECTIONS (ABOUT, PROJETS, ETC.)
+----------------------------- */
+section {
+    padding: 40px;                            
+    max-width: 800px;                         
+    margin: auto;                             
+    margin-top: 30px;                         
+    background-color: #ffeef4;               
+    border-radius: 15px;                      
+    box-shadow: 0 0 10px rgba(255,182,193,0.3);
+}
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.about-container p {
+    flex: 1;
+    font-size: 1.1em;
+    line-height: 1.5;
+}
+
+.about-photo {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #d85c84;
+}
+
+
+/* -----------------------------
+    TITRES (H1, H2, H3)
+----------------------------- */
+h1, h2, h3 {
+    color: #d85c84; 
+}
+
+/* -----------------------------
+    IMAGES DES PROJETS
+----------------------------- */
+.project img {
+    width: 100%;                            	
+    max-width: 600px;                       
+    border: 3px solid #ffcad4;             
+    border-radius: 10px;                  
+    margin-top: 10px;                
+}
+
+
+
+
+/* -----------------------------
+    IMAGES DES CENTRE INTERET
+----------------------------- */
+
+#interests {
+    max-width: 800px;
+    margin: 40px auto;
+    background-color: #ffeef4;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(255,182,193,0.3);
+}
+
+.interests-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.interest-item {
+    flex: 1 1 30%;
+    background-color: #fff8f5;
+    border: 2px solid #d85c84;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(216,92,132,0.15);
+}
+
+.interest-item img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    object-fit: cover;
+}
+
+.interest-item p {
+    font-size: 0.95em;
+    color: #444;
+}
+
+/* -----------------------------
+   Video 
+----------------------------- */
+.interest-video {
+    width: 200%;
+    max-width: 400px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    object-fit: cover;
+}
+
+/* -----------------------------
+    PIED DE PAGE (FOOTER)
+----------------------------- */
+footer {
+    background-color: #ffb6c1;             
+    color: white;                         
+    text-align: center;                    
+    padding: 15px;                         
+    margin-top: 50px;                      
+    font-size: 14px;                       
+    border-top: 5px solid #ffd1dc;         
+}
+
+/* -----------------------------
+    LISTES NON ORDONNÉES
+----------------------------- */
+ul {
+    list-style: circle;                   
+    padding-left: 20px;                    
+}
+
+/* -----------------------------
+    LIENS GÉNÉRAUX
+----------------------------- */
+a {
+    color: #c94f7c;                        
+    text-decoration: none;                 
+    transition: all 0.3s ease-in-out;      
+}
+
+/* Effet au survol des liens */
+a:hover {
+    color: #a63c66;                        
+    transform: scale(1.05);                
+    text-decoration: underline;            
+}
+
+/* -----------------------------
+    BOUTON CV (lien stylisé)
+----------------------------- */
+.btn-cv {
+    display: inline-block;                 
+    background-color: #ffb6c1;
+    color: white;                          
+    padding: 10px 20px;                    
+    border-radius: 20px;                   
+    text-decoration: none;                 
+    font-weight: bold;                     
+    transition: 0.3s;                      
+}
+
+/* Effet hover sur bouton CV */
+.btn-cv:hover {
+    background-color: #ff80ab;             
+}
+/* -----------------------------
+   TIMELINE (PARCOURS)
+----------------------------- */
+.timeline {
+    position: relative;
+    margin: 30px 0;
+    padding-left: 30px;
+    border-left: 3px solid #d85c84; /* rose vif cohérent avec ton thème */
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.timeline-icon {
+    position: absolute;
+    left: -22px;
+    top: 0;
+    background-color: #ffb6c1; /* rose clair */
+    color: white;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    box-shadow: 0 2px 6px rgba(216,92,132,0.3);
+}
+
+.timeline-content {
+    background-color: #fff8f5;
+    padding: 15px 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(216,92,132,0.1);
+    border: 1px solid #ffd1dc;
+}
+
+.timeline-content h3 {
+    margin: 0;
+    color: #d85c84;
+    font-size: 1.1em;
+}
+
+.timeline-content h4 {
+    margin: 5px 0;
+    color: #c94f7c;
+    font-size: 1em;
+}
+
+.timeline-content p {
+    margin: 0.5em 0 0;
+    color: #555;
+    line-height: 1.4;
+}
