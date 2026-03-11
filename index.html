@@ -2,149 +2,221 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-	<meta name="description" content="Portfolio de Sarah Ali, étudiante en BUT Informatique à l’IUT d’Orsay. Projets web, développement logiciel et UX design.">
-    <title> Sarah Ali</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio de Sarah Ali, étudiante en BUT Informatique à l'IUT d'Orsay. Projets web, développement logiciel et UX design.">
+    <title>Sarah Ali — Portfolio</title>
     <link rel="stylesheet" href="style.css">
-	<link rel="shortcut icon" type="images/jpg" href="images/sticker-lettre-s.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
 </head>
 <body>
-<header>
-    <h1>Mon Portfolio</h1>
-    <nav>
-        <a href="#about">Présentation </a>
-		<a href="#parcours">Parcours</a>
-		<a href="#skills">Compétences</a>
-        <a href="#projects">Projets</a>
-		<a href="#interests">Centre d'intérêt</a>
-        <a href="#contact">Contact + CV</a>
-    </nav>
-</header>
 
-<section id="about">
-    <h2>Présentation</h2>
-	<div class="about-container">
-    <p>Je suis étudiante en BUT Informatique à l’IUT d’Orsay. Je suis passionnée par le développement logiciel, les interfaces graphiques, l’UX design et la gestion de données (bases de données).</p>
-	<img src="images/ma_photo.jpg" alt="Photo de présentation" class="about-photo">
-	</div>
-</section>
-
-<section id="parcours">
-    <h2>Parcours</h2>
-    <div class="timeline">
-    <div class="timeline-item">
-            <div class="timeline-icon">💻</div>
-            <div class="timeline-content">
-                <h3>2024 – Aujourd’hui</h3>
-                <h4>BUT Informatique – IUT d’Orsay</h4>
-                <p>Parcours Réalisation d’applications (conception, développement, validation).  
-                Apprentissage du développement logiciel, de la conception d’interfaces et des tests applicatifs.</p>
-            </div>
-            </div>
-	<div class="timeline-item">
-            <div class="timeline-icon">🧸</div>
-            <div class="timeline-content">
-                <h3>2025</h3>
-                <h4>BAFA – Brevet d’Aptitude aux Fonctions d’Animateur</h4>
-                <p>Formation axée sur la communication, la créativité et la gestion de groupe dans le cadre d’activités pour enfants.</p>
-            </div>
-            </div>
-    <div class="timeline-item">
-            <div class="timeline-icon">🤖</div>
-            <div class="timeline-content">
-                <h3>2022 – 2024</h3>
-                <h4>Baccalauréat STI2D – Spécialité Systèmes d’Information et Numérique</h4>
-                <p>Découverte des bases de la programmation, des réseaux et des systèmes numériques.</p>
-            </div>
-            </div>
-	</div>
-</section>
-
-
-<section id="skills">
-    <h2>Compétences</h2>
-    <ul>
-        <li>Langages : PHP, HTML, CSS, Java, Javascript, PL/SQL, C++, C,</li>
-        <li>Outils : Linux/Windows, Git, Oracle, MySQL, Marionnet, Penpot, Figma</li>
-        <li>Méthodes : MVC, Tests unitaires, UML</li>
+<!-- NAV -->
+<nav id="navbar">
+    <div class="nav-logo">S<span>A</span></div>
+    <ul class="nav-links">
+        <li><a href="#about">Présentation</a></li>
+        <li><a href="#parcours">Parcours</a></li>
+        <li><a href="#skills">Compétences</a></li>
+        <li><a href="#projects">Projets</a></li>
+        <li><a href="#interests">Association</a></li>
+        <li><a href="#contact">Contact</a></li>
     </ul>
+    <button class="nav-toggle" aria-label="menu">☰</button>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+    <div class="hero-bg">
+        <div class="blob blob1"></div>
+        <div class="blob blob2"></div>
+        <div class="blob blob3"></div>
+    </div>
+    <div class="hero-content">
+        <p class="hero-tag">Étudiante BUT Informatique · IUT d'Orsay</p>
+        <h1 class="hero-name">Sarah <em>Ali</em></h1>
+        <p class="hero-desc">Développement logiciel · UX Design · Bases de données</p>
+        <div class="hero-cta">
+            <a href="#projects" class="btn-primary">Voir mes projets</a>
+            <a href="#contact" class="btn-outline">Me contacter</a>
+        </div>
+    </div>
+    <div class="hero-scroll">
+        <span>Défiler</span>
+        <div class="scroll-line"></div>
+    </div>
 </section>
 
-<section id="projects">
-    <h2>Mes projets</h2>
-    <div class="project">
-        <h3>Création d'un site internet</h3>
-        <p>Réalisation d’un site Web en HTML et CSS qui présente un lieu consacré au divertissement.</p>
-        <p><a href="https://sarah-ali5.github.io/S106/" target="_blank"> Voir le site complet</a></p>
-		
-		<h3>Création d'un site web de gestion d’un établissement</h3>
-		<p>
-		Projet universitaire consistant à développer une application web en PHP
-		permettant la gestion d’un établissement à partir d’une base de données
-		(consultation, ajout et modification de données).
-		</p>
-		<p>Technologies utilisées : PHP, HTML, CSS, SQL, base de données relationnelle</p>
-		<p>
-		<a href="https://projets.iut-orsay.fr/saes3-psounou/vue/PageAccueilAdministrateur.php" target="_blank">
-			Voir le site complet (Accès via un compte de démonstration)
-		</a>
-		</p>
-	</div>
-    <h2>Projets personnels</h2>
-    <div class="perso-container">
-        <div class="perso-item">
-			<p>Création d’un jeu en Python.</p>
-            <img src="images/jeu.PNG" alt="Projet perso 1">
+<!-- ABOUT -->
+<section id="about">
+    <div class="section-label">01 · Présentation</div>
+    <div class="about-grid">
+        <div class="about-text">
+            <h2>Qui suis-je ?</h2>
+            <p>Je suis étudiante en <strong>BUT Informatique</strong> à l'IUT d'Orsay, passionnée par le développement logiciel, les interfaces graphiques, l'UX design et la gestion de données.</p>
+            <p>Curieuse et investie, j'aime construire des projets qui allient technique et esthétique. Je suis également référente projet au sein de l'association <strong>Anim'monde</strong>.</p>
         </div>
-</section>
-	
-<section id="interests">
-    <h2>Centre d’intérêt : Association Anim'monde </h2>
-	<p>je suis referente projet de l'association Anim'monde </p>
-    <div class="interests-container">
-        <div class="interest-item">
-            <img src="images/ecole.jpg" alt="Événement association 1">
-            <p>Voyage humanitaire</p>
-        </div>
-        <div class="interest-item">
-            <img src="images/resultat.jpg" alt="Événement association 2">
-            <p>Construction de mobilier pour les écoles au Maroc</p>
-        </div>
-        <div class="interest-item">
-            <video class="interest-video" autoplay muted loop playsinline>
-			<source src="images/Video.mp4" type="video/mp4">
-			</video>
-			<p>Cohésion d'équipe</p>
+        <div class="about-card">
+            <div class="card-item"><span class="card-icon">📍</span><span>IUT d'Orsay, Île-de-France</span></div>
+            <div class="card-item"><span class="card-icon">🎓</span><span>BUT Informatique — Parcours RAP</span></div>
+            <div class="card-item"><span class="card-icon">💡</span><span>Dev · UX · BDD</span></div>
+            <div class="card-item"><span class="card-icon">🌍</span><span>Association Anim'monde</span></div>
         </div>
     </div>
 </section>
 
-
-<section id="contact">
-    <h2>Contact + CV</h2>
-	<p>Email : <a href="mailto:sarah.ali.1@outlook.fr">sarah.ali.1@outlook.fr</a></p>
-	<p>Téléphone : <a href="tel:+33766654065">07 66 65 40 65</a></p>
-    <p><a href="images/CV.pdf" download>Télécharger mon CV (PDF)</a></p>
-
+<!-- PARCOURS -->
+<section id="parcours">
+    <div class="section-label">02 · Parcours</div>
+    <h2>Mon chemin</h2>
+    <div class="timeline">
+        <div class="timeline-item">
+            <div class="tl-dot">💻</div>
+            <div class="tl-body">
+                <span class="tl-date">2024 – Aujourd'hui</span>
+                <h3>BUT Informatique – IUT d'Orsay</h3>
+                <p>Parcours Réalisation d'applications — développement logiciel, conception d'interfaces et tests applicatifs.</p>
+            </div>
+        </div>
+        <div class="timeline-item">
+            <div class="tl-dot">🧸</div>
+            <div class="tl-body">
+                <span class="tl-date">2025</span>
+                <h3>BAFA</h3>
+                <p>Brevet d'Aptitude aux Fonctions d'Animateur — communication, créativité et gestion de groupe.</p>
+            </div>
+        </div>
+        <div class="timeline-item">
+            <div class="tl-dot">🤖</div>
+            <div class="tl-body">
+                <span class="tl-date">2022 – 2024</span>
+                <h3>Bac STI2D – SIN</h3>
+                <p>Systèmes d'Information et Numérique — bases de la programmation, réseaux et systèmes numériques.</p>
+            </div>
+        </div>
+    </div>
 </section>
 
+<!-- SKILLS -->
+<section id="skills">
+    <div class="section-label">03 · Compétences</div>
+    <h2>Ce que je maîtrise</h2>
+    <div class="skills-grid">
+        <div class="skill-category">
+            <h3>Langages</h3>
+            <div class="skill-tags">
+                <span>PHP</span><span>HTML</span><span>CSS</span><span>Java</span>
+                <span>JavaScript</span><span>PL/SQL</span><span>C++</span><span>C</span><span>Python</span>
+            </div>
+        </div>
+        <div class="skill-category">
+            <h3>Outils &amp; Environnements</h3>
+            <div class="skill-tags">
+                <span>Linux</span><span>Windows</span><span>Git</span><span>Oracle</span>
+                <span>MySQL</span><span>Marionnet</span><span>Penpot</span><span>Figma</span>
+            </div>
+        </div>
+        <div class="skill-category">
+            <h3>Méthodes</h3>
+            <div class="skill-tags">
+                <span>MVC</span><span>Tests unitaires</span><span>UML</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+    <div class="section-label">04 · Projets</div>
+    <h2>Mes réalisations</h2>
+    <div class="projects-grid">
+        <div class="project-card">
+            <div class="project-number">01</div>
+            <h3>Site de divertissement</h3>
+            <p>Réalisation d'un site Web en HTML et CSS qui présente un lieu consacré au divertissement.</p>
+            <div class="project-tags"><span>HTML</span><span>CSS</span></div>
+            <a href="https://sarah-ali5.github.io/S106/" target="_blank" class="project-link">Voir le site →</a>
+        </div>
+        <div class="project-card">
+            <div class="project-number">02</div>
+            <h3>Gestion d'établissement</h3>
+            <p>Application web en PHP pour la gestion d'un établissement depuis une base de données (consultation, ajout, modification).</p>
+            <div class="project-tags"><span>PHP</span><span>HTML</span><span>CSS</span><span>SQL</span></div>
+            <a href="https://projets.iut-orsay.fr/saes3-psounou/vue/PageAccueilAdministrateur.php" target="_blank" class="project-link">Voir le site →</a>
+        </div>
+        <div class="project-card project-card--wide">
+            <div class="project-number">03</div>
+            <h3>Jeu en Python</h3>
+            <p>Projet personnel — création d'un jeu complet en Python.</p>
+            <div class="project-tags"><span>Python</span></div>
+            <img src="images/ForsakenIsland.PNG" alt="Capture du jeu Python" class="project-img">
+        </div>
+    </div>
+</section>
+
+<!-- INTERESTS -->
+<section id="interests">
+    <div class="section-label">05 · Association</div>
+    <h2>Anim'monde</h2>
+    <p class="section-intro">Je suis référente projet de l'association Anim'monde, qui mène des actions humanitaires et éducatives.</p>
+    <div class="interests-grid">
+        <div class="interest-card">
+            <div class="interest-media"><img src="images/ecole.jpg" alt="Voyage humanitaire" loading="lazy"></div>
+            <p>Voyage humanitaire</p>
+        </div>
+        <div class="interest-card">
+            <div class="interest-media"><img src="images/resultat.jpg" alt="Construction de mobilier scolaire au Maroc" loading="lazy"></div>
+            <p>Construction de mobilier pour les écoles au Maroc</p>
+        </div>
+        <div class="interest-card">
+            <div class="interest-media">
+                <video autoplay muted loop playsinline><source src="images/Video.mp4" type="video/mp4"></video>
+            </div>
+            <p>Cohésion d'équipe</p>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <div class="section-label">06 · Contact</div>
+    <h2>Me contacter</h2>
+    <div class="contact-grid">
+        <div class="contact-info">
+            <a href="mailto:sarah.ali.1@outlook.fr" class="contact-item">
+                <span class="contact-icon">✉️</span>
+                <span>sarah.ali.1@outlook.fr</span>
+            </a>
+            <a href="tel:+33766654065" class="contact-item">
+                <span class="contact-icon">📞</span>
+                <span>07 66 65 40 65</span>
+            </a>
+        </div>
+        <div class="contact-cv">
+            <a href="images/CV_2025.pdf" download class="btn-primary">Télécharger mon CV (PDF)</a>
+        </div>
+    </div>
+</section>
 
 <footer>
-    <p>&copy; 2025 - Portfolio</p>
+    <p>© 2025 Sarah Ali — Portfolio BUT Informatique</p>
 </footer>
 
+<script>
+const navbar = document.getElementById('navbar');
+window.addEventListener('scroll', () => {
+    navbar.classList.toggle('scrolled', window.scrollY > 50);
+});
+const toggle = document.querySelector('.nav-toggle');
+const navLinks = document.querySelector('.nav-links');
+toggle.addEventListener('click', () => { navLinks.classList.toggle('open'); });
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+}, { threshold: 0.1 });
+document.querySelectorAll('section, .project-card, .interest-card, .timeline-item, .skill-category').forEach(el => {
+    el.classList.add('fade-in');
+    observer.observe(el);
+});
+</script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
